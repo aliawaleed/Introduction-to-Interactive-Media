@@ -18,4 +18,4 @@ I had trouble figuring out how I will be able to tape the foil on my arm in a wa
 ![](close-up.jpg)
 
 **Below is the link to my video**
-[The Dumbbell Switch](https://)
+[The Dumbbell Switch](https://drive.google.com/open?id=1uLo9GDAFInztqLfNU3dCbZgT2wfcFNZU)
