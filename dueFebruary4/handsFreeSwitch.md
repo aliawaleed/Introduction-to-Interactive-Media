@@ -12,4 +12,4 @@ Accordingly, I got two pieces of foil to increase the surface area of contact be
 
 I had trouble figuring out how I will be able to tape the foil on my arm in a way such that it both sticks to my arm and does not fall off, as well as trying to avoid covering the whole piece of foil so that the pieces of foil touch, seeing that tape does not conduct electricity, and hence would not allow the electrons to pass through. 
 
-![](IMG_7412.HEIC)
+![](close-up.jpg)
