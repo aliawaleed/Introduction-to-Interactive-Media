@@ -16,3 +16,6 @@ When the dummbell is raised and the pieces of foil touch, the bulb lights up.
 I had trouble figuring out how I will be able to tape the foil on my arm in a way such that it both sticks to my arm and does not fall off, as well as trying to avoid covering the whole piece of foil so that the pieces of foil touch, seeing that tape does not conduct electricity, and hence would not allow the electrons to pass through. I solved this problem however by taping the foil to my arm from the edge further away, as in the edge closer to my hand and shoulder, rather than my elbow.
 
 ![](close-up.jpg)
+
+**Below is the link to my video**
+![The Dumbbell Switch](https://)
