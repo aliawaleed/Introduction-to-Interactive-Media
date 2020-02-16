@@ -5,4 +5,4 @@ The LED bulbs blink to the beat of "I know you want me" by Pitbull, and once the
 They are set up with four of each of the following colors: yellow, green, blue. So when the button is clicked, the first of each color blinks and then it moves to the next, when he starts saying "Uno Dos Tres Cuatro", the last bulb lights up first. 
 
 Below is an image of the schematic diagram:
-![](Schematic Diagram.png)
+![](Schematic_Diagram.png)
