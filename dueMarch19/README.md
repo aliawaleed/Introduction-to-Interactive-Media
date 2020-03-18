@@ -3,6 +3,7 @@
 For this assignment, I was required to draw a self-portrait of myself using processing. I tried my best to make the features look similar to what they are in real life.
 
 A screenshot of the self-portrait is uploaded below:
+
 ![](self-portrait.png)
 
 Some of the features I focused on include:
