@@ -1,38 +1,21 @@
 PImage img;
 
 class Net {
-  float r;    // radius
-  color col;  // color
-  float x, y; // location
+  float x, y; // x and y coordinates of the net
 
-  Net(float tempR) {
-    r = tempR;
-    col = color(50, 10, 10, 150);
-    x = 0;
-    y = 0;
-  }
-
-  void setLocation(float tempX, float tempY) {
+  void setLocation(float tempX, float tempY) { //sets location of the net
     x = tempX;
     y = tempY;
   }
 
-  void display() {
-    //stroke(0);
-    //fill(col);
-    //ellipse(x, y, r*2, r*2);
-    img = loadImage("fishnet.png");
-    image(img,x,y,128,128);
+  void display() { //function to display the net
+    img = loadImage("fishnet.png"); //importing net image
+    image(img,x,y,128,128); //places image x and y cooridnates of the mouse with size 128x128
   }
 
-  // A function that returns true or false based on
-  // if the net intersects a fish
-  boolean intersect(Fish f) {
-    // Calculate distance
-    float distance = dist(x + 30, y+100, f.x, f.y); 
-
-    // Compare distance to sum of radii
-    if (distance < r + f.r) { 
+  boolean intersect(Fish f) { //checks if net intersects with fish
+    float distance = dist(x + 50, y+120, f.x, f.y); //calculating distance from the net itself to the coordinates of the fish
+    if (distance < 25) { //checks if distance is less than the width of the fish
       return true;
     } else {
       return false;

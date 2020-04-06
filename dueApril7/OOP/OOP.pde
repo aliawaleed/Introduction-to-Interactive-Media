@@ -1,49 +1,44 @@
 Net net; // One net object
 Timer timer;        // One timer object
-Fish[] fishs;       // An array of fish objects
-int totalFishs = 0; // totalFishs
-int cnt = 0; 
+Fish[] fishs;       // Creating an array for the fish objects
+int totalFishs = 0; // Creating totalFishs variable
+int cnt = 0; // initializing count as 0 to later use for the score
 
 void setup() {
   size(480, 270);
-  net = new Net(32); // Create the net with a radius of 32
-  fishs = new Fish[1000];    // Create 1000 spots in the array
-  timer = new Timer(300);    // Create a timer that goes off every 300 milliseconds
-  timer.start();             // Starting the timer
+  net = new Net(); // Creating net 
+  fishs = new Fish[500];    // Create 500 fishs in the array
+  timer = new Timer(500);    // Creating a timer that goes off every 500 milliseconds
+  timer.start();             // Starts the the timer
 }
 
 void draw() {
-  background(173,211,230);
+  background(0,179,179); // for the ocean
+  fill(173,211,230);
+  rect(0, 0, width, 65); // for the sky
   fill(0, 102, 153);
   textSize(12);
-  text("Score:" + cnt, width - 60, 20);
+  text("Score:" + cnt, width - 60, 20); //printing score on top right corner of window
 
-  // Set net location
-  net.setLocation(mouseX -128/2, mouseY); 
-  // Display the net
-  net.display(); 
+  net.setLocation(mouseX -128/2, mouseY); //setting location of net, moving from the handle
+  net.display(); //calling display function for net
 
-  // Check the timer
-  if (timer.isFinished()) {
-    // Deal with fishs
-    // Initialize one fish
-    fishs[totalFishs] = new Fish();
-    // Increment totalFishs
-    totalFishs ++ ;
-    // If we hit the end of the array
-    if (totalFishs >= fishs.length) {
+  if (timer.isFinished()) { //checking the timer
+    fishs[totalFishs] = new Fish(); //create or initialize a new fish
+    totalFishs ++ ; //increments totalFishs by 1
+    if (totalFishs >= fishs.length) { //checks if all fishs are done
       totalFishs = 0; // Start over
+      cnt = 0; // change count to 0
     }
     timer.start();
   }
 
-  // Move and display all fishs
-  for (int i = 0; i < totalFishs; i++ ) {
-    fishs[i].move();
-    fishs[i].display();
-    if (net.intersect(fishs[i])) {
-      fishs[i].caught();
-      cnt += 1;
+  for (int i = 0; i < totalFishs; i++) { //goes through all the fish in the array
+    fishs[i].move(); //calls move function for the fish
+    fishs[i].display(); //calls display function for the fish 
+    if (net.intersect(fishs[i])) { //checks if net and fish intersect
+      fishs[i].caught(); //calls caught() function
+      cnt ++; // add 1 to the count, used for the score
     }
   }
 }
