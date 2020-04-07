@@ -50,7 +50,7 @@ class Fish { //creating fish class
 
   Fish() {
     x = width;                // Starting x-coordinate at the very right of the window
-    y = random(75,height);       // Starting with a random y-coordinate in the sea/ocean area
+    y = random(75,height - 15);   // Starting with a random y-coordinate in the sea/ocean area + ensures body of fish is on the screen
     speed = random(2, 5);    // randomizing the speed of the fish
   }
 
