@@ -6,6 +6,12 @@ class Net {
   void setLocation(float tempX, float tempY) { //sets location of the net
     x = tempX;
     y = tempY;
+    if (net.y + 128 > height) { //prevents net from leaving the screen at the bottom
+    net.y = height - 128;
+    }
+    if (mouseX - 128/2 < -20) { //prevents net from leaving the screen at the left
+    net.x = -22;
+    }
   }
 
   void display() { //function to display the net
