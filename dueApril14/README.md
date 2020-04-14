@@ -14,3 +14,10 @@ The overall concept of the visualization is to present the calories present in t
 
 Below is an image of the visualization:
 ![](calories.png)
+
+
+Problems I ran into:
+- Reading the file 
+    * Commas in product names
+    * A space before the very first title (Categories)
+    * NullPointerException?
