@@ -21,3 +21,4 @@ Problems I ran into:
     * Commas in product names
     * A space before the very first title (Categories)
     * NullPointerException?
+- Trouble checking if a string exists in a list and then using it to do something
