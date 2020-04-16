@@ -10,19 +10,20 @@
 */
 
 Table table; // one table object
-Food food;
+Food food; //one food class
 
 void setup() {
   size(800, 800);
-  food = new Food();
+  food = new Food(); //calling the food class
 }
 
 void draw() {
   background(255);
-  food.display();
+  food.display_calories(); //calls the function "display_calories" inside food
 }
 
 class Food {
+  // setting attributes for the food class and creating them as lists
   String category[];
   String product_name[];
   int calories[];
@@ -32,15 +33,16 @@ class Food {
     
   Food(){
     Table table = loadTable("menu_data.csv", "header"); //Load CSV file into the table object, added "header" to indicate a header row in the file
-    String category[] = new String[table.getRowCount()];
-    String product_name[] = new String[table.getRowCount()];
+    // goes through each row in every column to add its elements to a list
+    category = new String[table.getRowCount()];
+    product_name = new String[table.getRowCount()];
     calories = new int[table.getRowCount()];
-    float f[] = new float[table.getRowCount()];
-    float c[] = new float[table.getRowCount()];
-    float p[] = new float[table.getRowCount()];
+    f = new float[table.getRowCount()];
+    c = new float[table.getRowCount()];
+    p = new float[table.getRowCount()];
    
     for (int i = 0; i < table.getRowCount(); i++) { //iterating over all the rows of the table to access them
-      TableRow row = table.getRow(i);
+      TableRow row = table.getRow(i); //gets each row of the table
       //accessing the fields through their column name
       category[i] = row.getString("category");
       product_name[i] = row.getString("product_name");
@@ -51,11 +53,17 @@ class Food {
       }
   }
   
-  void display() { //function to display the circles
-    for (int i : calories){
-       fill(random(255),random(255),random(255));
-       circle(random(width),random(height), i/4);
-       frameRate(5);
+  void display_calories() { //function to display the circles
+    for (int i : calories){ //goes through all the elements of the list "calories"
+       fill(random(255),random(255),random(255)); //randomizes color of circle displayed
+       circle(random(i/8, width - i/8),random(i/8, height - i/8), i/4); //ensures that the location is within the window
+       frameRate(3); //slows down the number of frames displayed per second
     }
   }
+  
+  //void display_category() { //function to print the name of the item in the category list (trying out but does not work)
+  //  for (String i : category){ //goes through all the elements of the list "calories"
+  //     println(i);
+  //  }
+  //}
 }
