@@ -14,6 +14,7 @@ The goal of the game is to eat the most number of smaller fish and gain more poi
 
 
 The second game is called [Sky Burger](https://www.youtube.com/watch?v=L0LIzSpDEG8&t=60s), and below is a screenshot of the game:
+
 ![](SkyBurger.png)
 
 The goal of the game is to ensure that before you place the top bun of the burger, the items ordered by the customer are placed inside:
