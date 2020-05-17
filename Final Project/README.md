@@ -25,7 +25,7 @@ As displayed below:
     - the number displayed in the order decreases to keep track
     
 - When the top bun is placed on top of the burger:
-  * the game internally checks the constituents if the burger
+  * the game internally checks the constituents of the burger
   * if the ingredients are placed correctly as the order requires, the screen will display that it was a successful order
   * if not, the player would know that they failed 
   
