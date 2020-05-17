@@ -32,7 +32,7 @@ As displayed below:
 If order is successful :
 ![](success.png)
 
-If order failed:
+If played failed to place all ingredients:
 ![](failed.png)
 
 I used Daniel Shiffman's code for the ["Rain Catcher Game"](http://learningprocessing.com/examples/chp10/example-10-10-rain-catcher-game) in Algorithms as reference when I started coding.
