@@ -6,7 +6,7 @@ The game is similar to Sky Burger, which is a game that you can download on your
 
 A video of my own version of the game can be accessed using this [link](https://drive.google.com/file/d/1DLH2D2MQI0c9ZGYY3JCvyCR178lys7-d/view?usp=sharing).
 
-The goal of the game is to take the customer's order and ensure that you place all the required ingredients in the burger before you place the top bun. Once the top bun is placed, the game ends and you get to know whether you made the correct order or not. 
+The goal of the game is to take the customer's order and ensure that you place all the required ingredients in the burger before you place the top bun. Once the top bun is placed, the game ends and you get to know whether you placed all of the correct items or not. 
 
 - The game initially starts with:
   * a bun at the bottom of the screen 
@@ -31,6 +31,9 @@ As displayed below:
   
 If order is successful :
 ![](success.png)
+
+If order failed:
+![](failed.png)
 
 I used Daniel Shiffman's code for the ["Rain Catcher Game"](http://learningprocessing.com/examples/chp10/example-10-10-rain-catcher-game) in Algorithms as reference when I started coding.
 
