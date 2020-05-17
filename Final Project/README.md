@@ -9,7 +9,7 @@ The goal of the game is to ensure that before you place the top bun of the burge
 - When you run, the game initially starts with:
   * a bun at the bottom of the screen 
   * a price of $0
-  * a tip of $0
+  * a tip of 0%
   * the customer's order at the top, with the number of each ingredient required (randomized)
 
 As displayed below:
