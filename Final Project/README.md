@@ -2,17 +2,17 @@
 
 For my final project, I was inspired by a concept that is somewhat common, similar to games where you are required to build the longest tower using the blocks that fall from the sky, but the idea specifically is relatively new.
 
-The game is similar to Sky Burger, which is a game that you can download on your smartphone. You can watch a video of the game being played [Here](https://www.youtube.com/watch?v=L0LIzSpDEG8&t=60s).
+The game is similar to Sky Burger, which is a game that you can download on your smartphone. You can watch a video of the game being played [here](https://www.youtube.com/watch?v=L0LIzSpDEG8&t=60s).
 
 A video of my own version of the game can be accessed using this [link](https://drive.google.com/file/d/1DLH2D2MQI0c9ZGYY3JCvyCR178lys7-d/view?usp=sharing).
 
-The goal of the game is to take the customer's order and ensure that you place all the required ingredients in the burger before you place the top bun. Once the top bun is placed, the game ends and you get to know whether you placed all of the correct items or not. 
+The goal of the game is to take the customer's order, which is placed on top and make sure that you place all the required ingredients in the burger before you place the top bun. Once the top bun is placed, the game ends and you get to know whether you placed the placed all of the required items or not. 
 
 - The game initially starts with:
-  * a bun at the bottom of the screen 
-  * a price of $0
+  * a bottom bun at the bottom of the screen 
+  * a price of $0.00
   * a tip of 0%
-  * the customer's order at the top, with the number of each ingredient required (randomized)
+  * the customer's order at the top, with the number of each ingredient required (randomized each turn)
 
 As displayed below:
 ![](setUp.png)
@@ -22,9 +22,9 @@ As displayed below:
   * you can control the movement of the bottom bun using the mouse
   * when an ingredient lays on the bottom bun or another ingredient:
     - it sticks to it
-    - the number displayed in the order decreases
+    - the number displayed in the order decreases to keep track
     
-- When the top bun is placed on the burger:
+- When the top bun is placed on top of the burger:
   * the game internally checks the constituents if the burger
   * if the ingredients are placed correctly as the order requires, the screen will display that it was a successful order
   * if not, the player would know that they failed 
