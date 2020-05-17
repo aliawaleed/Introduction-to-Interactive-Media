@@ -4,7 +4,7 @@ For my final project, I was inspired by a concept that is somewhat common, simil
 
 The game is similar to Sky Burger, which is a game that you can download on your smartphone. You can watch a video of the game being played [Here](https://www.youtube.com/watch?v=L0LIzSpDEG8&t=60s).
 
-A video of my own version of the game can be accessed using this [link](*add link*).
+A video of my own version of the game can be accessed using this [link](https://drive.google.com/file/d/1DLH2D2MQI0c9ZGYY3JCvyCR178lys7-d/view?usp=sharing).
 
 The goal of the game is to take the customer's order and ensure that you place all the required ingredients in the burger before you place the top bun. Once the top bun is placed, the game ends and you get to know whether you made the correct order or not. 
 
