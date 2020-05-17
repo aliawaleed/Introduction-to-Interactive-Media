@@ -1,12 +1,12 @@
 class Ingredient {
   float x, y; //location
   float speed; //speed of ingredient
-  float type;
+  float type; //type of ingredient
   PImage img;
   boolean inBurger;
 
   Ingredient() {
-    inBurger = false;
+    inBurger = false; //initialized as false
     type = random(5);
     img= ings [int(type)];
     x = random(50, width - 50); //random x coordinate within the screen, ensures the whole ingredient is displayed
@@ -29,7 +29,7 @@ class Ingredient {
     x = bottomBun.x; //moves with x coordinate of bottomBun
     y = bottomBun.y - 10*burger.size(); //gets placed above the bottomBun
     inBurger = true;
-    //println("----------ing caught-----------");
+    //println("----------ing caught-----------"); //for debugging purposes
     count = 0;
     for (OrderIngredient ing : order.order) {
       if ( int(ing.type) == int(type) && ing.number > 0) { //checks if the ingredient caught is the same as the one in the order
@@ -43,7 +43,7 @@ class Ingredient {
         count += 1;
       }
     }
-    println(count);
+    //println(count); //for debugging purposes
     if (count == 4) {
       tip -= 0.1;
     }

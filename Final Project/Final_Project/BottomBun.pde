@@ -37,13 +37,4 @@ class BottomBun {
       return false;
     }
   }
-
-  //boolean intersect(TopBun t) { //returns true or false if bottomBun intersects with ingredient
-  //  float distance = dist(x, y, t.x, t.y); 
-  //  if (distance < 20) { 
-  //    return true;
-  //  } else {
-  //    return false;
-  //  }
-  //}
 }

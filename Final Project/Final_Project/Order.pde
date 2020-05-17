@@ -11,7 +11,7 @@ class Order {
     y = 30;
     order = new ArrayList<OrderIngredient>(); //creates an array of the ingredients in an order
     complete = false;
-    int[] columns = {120, 200, 280, 360, 480};
+    int[] columns = {120, 200, 280, 360, 480}; // 480 is outside the screen for the top bun
     for (int i = 0; i < ings.length; i++) { //go through the ingredients and place them in a different column at y = 30
       order.add(new OrderIngredient(i));
       order.get(i).x = columns[i];
@@ -26,12 +26,12 @@ class Order {
       }
       count = 0;
       for  ( OrderIngredient oIng : order) {
-        if (oIng.number != 0) {
+        if (oIng.number != 0) { //if not placed in burger yet
           count = 1;
           break;
         }
       }
-      if (count == 0) {
+      if (count == 0) { //if ingredients are placed correctly
         background(0, 204, 0);
         fill(245, 245, 220);
         rect(50, 50, width - 100, height - 100, 7);
@@ -43,7 +43,7 @@ class Order {
         fill(0);
         text("Successful Order!", width/2, 150);
         textAlign(CENTER, CENTER);
-      } else {
+      } else { //if you fail the order
         background(0);
         fill(245, 245, 220);
         rect(50, 50, width - 100, height - 100, 7);
